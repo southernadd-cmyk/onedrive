@@ -77,7 +77,7 @@ Backups must be checked regularly.</div>
  <div class="action"><label><input type="checkbox" data-save="task.deleted"><span><b>I deleted only the practice file and found it in the Recycle bin.</b></span></label></div>
  <div class="action"><label><input type="checkbox" data-save="task.recovered"><span><b>I restored the file and checked that its original contents survived.</b></span></label></div>
  <div class="evidence"><label for="binEvidence">Evidence: Where did you find the deleted file, and how did you verify the restore?</label><textarea id="binEvidence" data-save="answer.binEvidence" placeholder="I found it in... After restoring it I checked..."></textarea><div class="hint">You can also paste a screenshot into Class Notebook separately.</div></div>
- <div class="evidence"><label for="binWhy">Explain: Why is restoring a deleted file different from restoring a whole damaged server?</label><textarea id="binWhy" data-save="answer.binWhy" placeholder="A file restore... A full system restore..."></textarea></div>
+ <div class="evidence"><label for="binWhy">Explain: Why is restoring this one missing file a better first step than restoring every file in OneDrive?</label><textarea id="binWhy" data-save="answer.binWhy" placeholder="It is better to restore just the missing file because..."></textarea></div>
 </section>
 <section class="stage" data-stage="2" data-title="Version history" data-duration="18">
  <div class="stagehead"><span class="tag">STAGE 03</span><span class="tag time">18 minutes</span><span class="tag">File/data restore</span></div>
@@ -86,21 +86,22 @@ Backups must be checked regularly.</div>
  <div class="callout"><strong>Official Microsoft walkthrough</strong><a href="https://support.microsoft.com/en-us/onedrive/restore-a-previous-version-of-a-file-stored-in-onedrive" target="_blank" rel="noopener noreferrer">Restore a previous version of a file ↗</a></div>
  <ol class="numberlist">
  <li>Open <b>Practice-VersionHistory.docx</b> in Word for the web.</li>
- <li>Replace the first and last lines so that the document now says <b>Version 2</b> and the incorrect information below. Do not edit any other file.</li>
- <li>Allow Word to save, then close the file. Wait a short while before checking its Version History.</li>
+ <li>Make sure your approved Version 1 was saved in Lesson Stage 1 before changing it. If necessary, close and reopen the file to check.</li>
+ <li><b>Replace all the text</b> in this practice document with the incorrect Version 2 text shown below. Do not edit any other file.</li>
+ <li>Wait until Word says the changes are saved, then close the file.</li>
  </ol>
  <div class="template">VERSION 2 — INCORRECT INFORMATION
 Assessment date: CANCELLED
 Student records: confidential
 Backups are no longer necessary.</div>
- <ol class="numberlist" start="4">
+ <ol class="numberlist" start="5">
  <li>Back in OneDrive, right-click (or choose the <b>...</b> menu for) <b>Practice-VersionHistory.docx</b> and select <b>Version history</b>.</li>
  <li>Find an earlier saved version showing the approved information. Select <b>Restore</b> for that version.</li>
  <li>Reopen the file and check that <b>Friday</b> and <b>Backups must be checked regularly</b> are back.</li>
  </ol>
  <div class="action"><label><input type="checkbox" data-save="task.changed"><span><b>I deliberately saved the incorrect Version 2 of the practice file.</b></span></label></div>
- <div class="action"><label><input type="checkbox" data-save="task.version"><span><b>I restored the earlier approved version and verified its contents.</b></span></label></div>
- <div class="callout warning"><strong>Can't see Version History?</strong>Make sure the document is in OneDrive, not only on the desktop. Close/reopen the document, wait for saving to finish, and check again. Your college may restrict Version History. If it is unavailable, read Microsoft's instructions and complete the questions below — do not alter any other files.</div>
+ <div class="action"><label><input type="checkbox" data-save="task.version"><span><b>I checked Version History and either restored the approved version or recorded why this feature was unavailable.</b></span></label></div>
+ <div class="callout warning"><strong>Can't see Version History?</strong>Make sure the document is in OneDrive, not only on the desktop. Close and reopen it after saving, then check again. If the earlier version is missing, do not guess or restore an unrelated version. Your college may restrict Version History. Record what you can see in the evidence box, read Microsoft's guide and continue with the questions — do not alter other files.</div>
  <div class="evidence"><label for="versionEvidence">Evidence: What changed between Version 1 and Version 2? What did you see after restoring?</label><textarea id="versionEvidence" data-save="answer.versionEvidence" placeholder="Version 2 said... I restored... The final file showed..."></textarea></div>
  <div class="evidence"><label for="versionWhy">Explain: Why might an organisation deliberately choose an older version, even though a newer one exists?</label><textarea id="versionWhy" data-save="answer.versionWhy" placeholder="The latest version might..."></textarea></div>
 </section>
@@ -112,17 +113,18 @@ Backups are no longer necessary.</div>
  <div class="action"><label><input type="checkbox" data-save="task.verifyA"><span><b>Deleted-file test:</b> Practice-RecycleBin.docx is back in the original practice folder and opens correctly.</span></label></div>
  <div class="action"><label><input type="checkbox" data-save="task.verifyB"><span><b>Version test:</b> The approved Version 1 contents are visible (or I recorded the college restriction).</span></label></div>
  <div class="action"><label><input type="checkbox" data-save="task.verifyC"><span><b>Safety:</b> No genuine coursework or shared data was modified.</span></label></div>
- <div class="evidence"><label for="restoreLimits">What could still go wrong after recovering a file? Give two examples.</label><textarea id="restoreLimits" data-save="answer.restoreLimits" placeholder="For example, the file might..."></textarea></div>
+ <div class="evidence"><label for="restoreLimits">Give two checks an IT technician should carry out after restoring a file. Explain why each check matters.</label><textarea id="restoreLimits" data-save="answer.restoreLimits" placeholder="Check 1... This matters because... Check 2..."></textarea></div>
  <div class="callout"><strong>Important distinction</strong>OneDrive Recycle Bin and Version History are useful recovery features. They are <b>not the same thing as a separate, independently tested organisational backup</b>. Pearson also expects you to know full, differential and incremental backups, plus onsite/offsite/cloud strategies.</div>
 </section>
 <section class="stage" data-stage="4" data-title="Incident decisions" data-duration="15">
  <div class="stagehead"><span class="tag">STAGE 05</span><span class="tag time">15 minutes</span><span class="tag">C1.1.3 · C1.1.6</span></div>
  <h2>You're now the college IT team</h2>
  <p class="dek">Use what you've just done to select a recovery action and explain when a wider disaster recovery plan is needed.</p>
- <div class="callout warning"><strong>Incident report — 09:15</strong>A tutor has deleted one lesson plan. A second tutor has saved incorrect changes to a shared file. Meanwhile, several other staff report that files have become unreadable and show suspicious new names. The IT team suspects ransomware.</div>
- <fieldset class="question" data-quiz="q1"><legend>1. A tutor deleted one lesson plan. What is the best first recovery method?</legend><label><input type="radio" name="q1" value="a">Restore the entire college server</label><label><input type="radio" name="q1" value="b">Check the file's OneDrive Recycle Bin</label><label><input type="radio" name="q1" value="c">Delete the tutor's OneDrive account</label></fieldset>
- <fieldset class="question" data-quiz="q2"><legend>2. A document now contains incorrect text. What should you investigate?</legend><label><input type="radio" name="q2" value="a">Version History, to recover an earlier correct version</label><label><input type="radio" name="q2" value="b">The physical laptop battery</label><label><input type="radio" name="q2" value="c">The Wi-Fi password</label></fieldset>
- <fieldset class="question" data-quiz="q3"><legend>3. Many files suddenly become unreadable. What should the team do first?</legend><label><input type="radio" name="q3" value="a">Restore every file immediately without checking anything</label><label><input type="radio" name="q3" value="b">Ignore it if one file can still be opened</label><label><input type="radio" name="q3" value="c">Report and contain the suspected incident, then plan safe recovery</label></fieldset>
+ <div class="callout warning"><strong>Three separate incident reports</strong>Consider each situation independently — these are <b>not</b> happening at the same time.<p><b>Case A:</b> A tutor accidentally deleted one lesson plan from their own OneDrive.</p><p><b>Case B:</b> Another tutor saved incorrect changes to a document stored in OneDrive.</p><p><b>Case C:</b> Many staff report that files are suddenly unreadable and have suspicious new names. The IT team suspects ransomware.</p></div>
+ <div class="callout"><strong>Choosing the right response</strong>A single missing or changed file may need a targeted restore. Suspected ransomware across many computers is different: report it to the IT/security team, contain the incident, assess its impact and recover from trusted sources only after it is safe to do so.</div>
+ <fieldset class="question" data-quiz="q1"><legend>1. Case A: One lesson plan was accidentally deleted from OneDrive. What is the best first recovery method?</legend><label><input type="radio" name="q1" value="a">Restore the entire college server</label><label><input type="radio" name="q1" value="b">Check the file's OneDrive Recycle Bin</label><label><input type="radio" name="q1" value="c">Delete the tutor's OneDrive account</label></fieldset>
+ <fieldset class="question" data-quiz="q2"><legend>2. Case B: A OneDrive document contains incorrect text. What should you investigate?</legend><label><input type="radio" name="q2" value="a">Version History, to recover an earlier correct version</label><label><input type="radio" name="q2" value="b">The physical laptop battery</label><label><input type="radio" name="q2" value="c">The Wi-Fi password</label></fieldset>
+ <fieldset class="question" data-quiz="q3"><legend>3. Case C: Many files suddenly become unreadable. What should the team do first?</legend><label><input type="radio" name="q3" value="a">Restore every file immediately without checking anything</label><label><input type="radio" name="q3" value="b">Ignore it if one file can still be opened</label><label><input type="radio" name="q3" value="c">Report and contain the suspected incident, then plan safe recovery</label></fieldset>
  <fieldset class="question" data-quiz="q4"><legend>4. Is Version History a complete replacement for a separate backup policy?</legend><label><input type="radio" name="q4" value="a">Yes, because versions can never be lost</label><label><input type="radio" name="q4" value="b">No, organisations also need independent protection and tested recovery</label></fieldset>
  <div class="buttons"><button class="button primary" type="button" id="checkQuiz">Check my decisions</button></div>
  <div id="quizResult" aria-live="polite"></div>
@@ -134,7 +136,9 @@ Backups are no longer necessary.</div>
  <h2>Apply your knowledge</h2>
  <p class="dek">Your final answers should use examples from the practical and explain the wider recovery policy.</p>
  <div class="evidence"><label for="exam1">Question 1 · Explain two advantages of using file version history when recovering data after an error. (4 marks)</label><textarea id="exam1" data-save="answer.exam1" placeholder="One advantage is... This helps because..."></textarea></div>
- <div class="evidence"><label for="exam2">Question 2 · Explain the difference between a full backup and an incremental backup. (4 marks)</label><textarea id="exam2" data-save="answer.exam2" placeholder="A full backup... An incremental backup..."></textarea></div>
+ <div class="callout"><strong>Before Question 2: Backup methods</strong><b>Full backup:</b> copies all the selected data. <b>Incremental backup:</b> copies data changed since the previous backup. Incremental backups can be quicker to create, but restoring data may require the full backup and several incremental backups.</div>
+ <div class="evidence"><label for="exam2">Question 2 · Explain one difference between a full backup and an incremental backup, and how that difference could affect recovery. (4 marks)</label><textarea id="exam2" data-save="answer.exam2" placeholder="A full backup... An incremental backup... This affects restoration because..."></textarea></div>
+ <div class="callout"><strong>Before Question 3: Disaster recovery policy</strong>A disaster recovery policy explains <b>when</b> recovery procedures are activated, <b>who</b> is responsible, <b>which services</b> must be restored first, <b>how</b> backups and recovery methods will be used, and <b>how</b> recovery is checked and reported.</div>
  <div class="evidence"><label for="exam3">Question 3 · A college suffers a serious ransomware incident. Analyse why it needs a disaster recovery policy, not just OneDrive Version History. (6 marks)</label><textarea id="exam3" data-save="answer.exam3" style="min-height:140px" placeholder="A disaster recovery policy would define... It would prioritise..."></textarea></div>
  <div class="callout success"><strong>Finished? Save your evidence.</strong>Use <b>Download your answers</b> or <b>Copy for Class Notebook</b>. Include a screenshot of your recovered practice file in OneNote if your teacher requests it. The site does not access or submit your OneDrive data.</div>
  <div class="buttons"><button class="button primary" type="button" id="downloadEnd">Download my work</button><button class="button" type="button" id="copyEnd">Copy answers for Class Notebook</button></div>
@@ -177,7 +181,7 @@ Backups are no longer necessary.</div>
  });
  Array.from(document.querySelectorAll('input[type=radio]')).forEach(function(el){
   if(data[el.name]===el.value){el.checked=true}
-  el.addEventListener('change',function(){data[el.name]=el.value;persist()});
+  el.addEventListener('change',function(){data[el.name]=el.value;delete data.quizScore;document.getElementById('quizResult').textContent='';persist()});
  });
  function updateMeter(){
   var tasks=Array.from(document.querySelectorAll('[data-save^="task."]'));
@@ -217,7 +221,13 @@ Backups are no longer necessary.</div>
     });
   });
   lines.push('INCIDENT DECISION QUESTIONS');
-  Object.keys(correct).forEach(function(k,i){lines.push('Question '+(i+1)+': '+(data[k]||'(not answered)'))});
+  Object.keys(correct).forEach(function(k,i){
+    var field=document.querySelector('fieldset[data-quiz="'+k+'"]');
+    var prompt=field?field.querySelector('legend').textContent:'Question '+(i+1);
+    var chosen=field?field.querySelector('input[name="'+k+'"]:checked'):null;
+    var option=chosen?chosen.closest('label').textContent.trim():'(not answered)';
+    lines.push(prompt, 'My answer: '+option, '');
+  });
   if(data.quizScore!==undefined){lines.push('Self-check score: '+data.quizScore+'/4')}
   lines.push('','Microsoft recovery guides:','https://support.microsoft.com/en-gb/onedrive/restore-your-onedrive-files','https://support.microsoft.com/en-us/onedrive/restore-a-previous-version-of-a-file-stored-in-onedrive');
   return lines.join('\r\n');
