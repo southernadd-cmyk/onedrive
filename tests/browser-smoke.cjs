@@ -67,6 +67,20 @@ const path = require('node:path');
       await page.locator('#checkQuiz').click();
       assert.match(await page.locator('#quizResult').innerText(),/3 \/ 4 correct/);
     });
+    await check('RTO/RPO teaching, answer persistence, and 75-minute pacing',async()=>{
+      await page.locator('.stepnav').nth(4).click();
+      const stageText=await page.locator('.stage.active').innerText();
+      assert.match(stageText,/RTO — Recovery Time Objective/);
+      assert.match(stageText,/RPO — Recovery Point Objective/);
+      assert.match(stageText,/10:00 AM/);
+      assert.match(stageText,/RTO of 2 hours/);
+      assert.match(stageText,/RPO of 30 minutes/);
+      await page.locator('#rtoRpo').fill('By 12:00 PM; at most 30 minutes of data changes; time and data loss are separate recovery targets.');
+      await page.reload();
+      assert.match(await page.locator('#rtoRpo').inputValue(),/By 12:00 PM/);
+      const durations=await page.locator('.stage').evaluateAll(ns=>ns.map(n=>Number(n.dataset.duration)));
+      assert.deepEqual(durations,[7,12,17,7,18,14]);
+    });
     await check('Download contains full response and human-readable quiz choices',async()=>{
       const [download] = await Promise.all([
         page.waitForEvent('download'),
@@ -74,6 +88,7 @@ const path = require('node:path');
       ]);
       const text = fs.readFileSync(await download.path(),'utf8');
       assert.match(text,/Practice files protect actual coursework/);
+      assert.match(text,/By 12:00 PM; at most 30 minutes of data changes/);
       assert.match(text,/Question 1/i);
       assert.match(text,/My answer: Restore the college's latest full backup/);
       assert.match(text,/Self-check score: 3\/4/);
