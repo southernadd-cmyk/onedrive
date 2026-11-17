@@ -21,6 +21,12 @@ const path = require('node:path');
   const base='http://127.0.0.1:'+port+'/';
   try{
     await page.goto(base,{waitUntil:'load'});
+    await check('Public GitHub Pages serves the same current lesson',async()=>{
+      const response=await page.request.get('https://southernadd-cmyk.github.io/onedrive/',{timeout:30000});
+      assert.equal(response.status(),200);
+      const published=await response.text();
+      assert.equal(published.trim(),html.trim(),'Published HTML does not match repository HTML');
+    });
     await check('Starting screen and all six stages',async()=>{
       assert.equal(await page.locator('.stage').count(),6);
       assert.equal(await page.locator('.stage.active').count(),1);
