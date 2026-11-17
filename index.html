@@ -40,8 +40,8 @@ footer.sitefoot{max-width:1180px;margin:0 auto 26px;padding:0 24px;color:var(--s
 </aside>
 <main>
 <div class="panel">
-<section class="stage active" data-stage="0" data-title="Get ready" data-duration="8">
- <div class="stagehead"><span class="tag">STAGE 01</span><span class="tag time">8 minutes</span><span class="tag">A4.1.2</span></div>
+<section class="stage active" data-stage="0" data-title="Get ready" data-duration="7">
+ <div class="stagehead"><span class="tag">STAGE 01</span><span class="tag time">7 minutes</span><span class="tag">A4.1.2</span></div>
  <h2>Start with safe test files</h2>
  <p class="dek">You will use your real college OneDrive to practise recovering lost or changed files. We will only change two practice documents you create yourself.</p>
  <div class="callout"><strong>What are we testing?</strong><b>Test 1 — Deleted-file recovery:</b> You will delete a practice document, restore it from OneDrive's Recycle bin and check that it opens correctly.<br><b>Test 2 — Version recovery:</b> You will deliberately replace correct text in a second practice document, restore an earlier version and check that the original information is back.<p>These are two examples of how an organisation can recover data after mistakes or unwanted changes.</p></div>
@@ -79,8 +79,8 @@ Backups must be checked regularly.</div>
  <div class="evidence"><label for="binEvidence">Evidence: Where did you find the deleted file, and how did you verify the restore?</label><textarea id="binEvidence" data-save="answer.binEvidence" placeholder="I found it in... After restoring it I checked..."></textarea><div class="hint">You can also paste a screenshot into Class Notebook separately.</div></div>
  <div class="evidence"><label for="binWhy">Explain: Why is restoring this one missing file a better first step than restoring every file in OneDrive?</label><textarea id="binWhy" data-save="answer.binWhy" placeholder="It is better to restore just the missing file because..."></textarea></div>
 </section>
-<section class="stage" data-stage="2" data-title="Version history" data-duration="18">
- <div class="stagehead"><span class="tag">STAGE 03</span><span class="tag time">18 minutes</span><span class="tag">File/data restore</span></div>
+<section class="stage" data-stage="2" data-title="Version history" data-duration="17">
+ <div class="stagehead"><span class="tag">STAGE 03</span><span class="tag time">17 minutes</span><span class="tag">File/data restore</span></div>
  <h2>Undo the wrong changes</h2>
  <p class="dek">Imagine that incorrect information was saved over a previously correct document. Find the earlier version and recover it.</p>
  <div class="callout"><strong>Official Microsoft walkthrough</strong><a href="https://support.microsoft.com/en-us/onedrive/restore-a-previous-version-of-a-file-stored-in-onedrive" target="_blank" rel="noopener noreferrer">Restore a previous version of a file ↗</a></div>
@@ -105,8 +105,8 @@ Backups are no longer necessary.</div>
  <div class="evidence"><label for="versionEvidence">Evidence: What changed between Version 1 and Version 2? What did you see after restoring?</label><textarea id="versionEvidence" data-save="answer.versionEvidence" placeholder="Version 2 said... I restored... The final file showed..."></textarea></div>
  <div class="evidence"><label for="versionWhy">Explain: Why might an organisation deliberately choose an older version, even though a newer one exists?</label><textarea id="versionWhy" data-save="answer.versionWhy" placeholder="The latest version might..."></textarea></div>
 </section>
-<section class="stage" data-stage="3" data-title="Check recovery" data-duration="8">
- <div class="stagehead"><span class="tag">STAGE 04</span><span class="tag time">8 minutes</span><span class="tag">A4.1.2 · C1.1.3</span></div>
+<section class="stage" data-stage="3" data-title="Check recovery" data-duration="7">
+ <div class="stagehead"><span class="tag">STAGE 04</span><span class="tag time">7 minutes</span><span class="tag">A4.1.2 · C1.1.3</span></div>
  <h2>Prove recovery actually worked</h2>
  <p class="dek">IT teams should not assume that clicking “Restore” means a system is healthy. They test the result.</p>
  <div class="checklist-head"><h3>Your recovery verification checklist</h3><span class="status">2 test documents only</span></div>
@@ -116,8 +116,8 @@ Backups are no longer necessary.</div>
  <div class="evidence"><label for="restoreLimits">Give two checks an IT technician should carry out after restoring a file. Explain why each check matters.</label><textarea id="restoreLimits" data-save="answer.restoreLimits" placeholder="Check 1... This matters because... Check 2..."></textarea></div>
  <div class="callout"><strong>Important distinction</strong>OneDrive Recycle Bin and Version History are useful recovery features. They are <b>not the same thing as a separate, independently tested organisational backup</b>. The AAQ specification also includes full, differential and incremental backups, onsite/offsite/cloud strategies, and other recovery methods. Today's practical demonstrates <b>file/data recovery</b>, not all of those techniques.</div>
 </section>
-<section class="stage" data-stage="4" data-title="Incident decisions" data-duration="15">
- <div class="stagehead"><span class="tag">STAGE 05</span><span class="tag time">15 minutes</span><span class="tag">C1.1.3 · C1.1.6</span></div>
+<section class="stage" data-stage="4" data-title="Incident decisions" data-duration="18">
+ <div class="stagehead"><span class="tag">STAGE 05</span><span class="tag time">18 minutes</span><span class="tag">C1.1.3 · C1.1.6</span></div>
  <h2>You're now the college IT team</h2>
  <p class="dek">Use what you've just done to select a recovery action and explain when a wider disaster recovery plan is needed.</p>
  <div class="callout warning"><strong>Three separate incident reports</strong>Consider each situation independently — these are <b>not</b> happening at the same time.<p><b>Case A:</b> A tutor accidentally deleted one lesson plan from their own OneDrive.</p><p><b>Case B:</b> Another tutor saved incorrect changes to a document stored in OneDrive.</p><p><b>Case C:</b> Many staff report that files are suddenly unreadable and have suspicious new names. The IT team suspects ransomware.</p></div>
@@ -128,6 +128,14 @@ Backups are no longer necessary.</div>
  <fieldset class="question" data-quiz="q4"><legend>4. Is Version History a complete replacement for a separate backup policy?</legend><label><input type="radio" name="q4" value="a">Yes, because OneDrive keeps earlier versions of documents</label><label><input type="radio" name="q4" value="b">No, organisations also need independent protection and tested recovery</label></fieldset>
  <div class="buttons"><button class="button primary" type="button" id="checkQuiz">Check my decisions</button></div>
  <div id="quizResult" aria-live="polite"></div>
+ <h3>Recovery targets: RTO and RPO</h3>
+ <p>When planning recovery from a serious incident, an organisation sets targets for <b>time</b> and <b>data loss</b>.</p>
+ <div class="grid2">
+  <div class="callout"><strong>RTO — Recovery Time Objective</strong><p>How quickly should a service be working again after disruption? An RTO of 2 hours means the organisation aims to restore it within 2 hours.</p></div>
+  <div class="callout"><strong>RPO — Recovery Point Objective</strong><p>How much recent data can the organisation afford to lose? An RPO of 30 minutes means it aims to lose no more than 30 minutes of changes.</p></div>
+ </div>
+ <div class="callout"><strong>Quick scenario</strong>A college student-records system goes down at <b>10:00 AM</b>. Its recovery plan sets an <b>RTO of 2 hours</b> and an <b>RPO of 30 minutes</b>. These are planning targets, not guarantees.</div>
+ <div class="evidence"><label for="rtoRpo">Quick check: (1) By what time should the service be restored? (2) What is the maximum acceptable loss of recent data? (3) Why does the college need both targets?</label><textarea id="rtoRpo" data-save="answer.rtoRpo" placeholder="1. The service should be restored by...&#10;2. The maximum acceptable data loss is...&#10;3. Both targets matter because..."></textarea><div class="hint">Hint: RTO = time to restore the service. RPO = acceptable recent data loss.</div></div>
  <div class="evidence"><label for="triage">Explain (4 marks): Why should the response to one deleted lesson plan differ from the response to suspected ransomware across the college?</label><textarea id="triage" data-save="answer.triage" placeholder="The deleted file affects... However, ransomware..."></textarea></div>
  <div class="evidence"><label for="roles">Who should be informed about the suspected ransomware? Give two roles and explain what each would do.</label><textarea id="roles" data-save="answer.roles" placeholder="The IT/security lead would... Senior management would..."></textarea></div>
 </section>
